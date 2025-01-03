@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Domanda per accedere</title>
+    <script>
+        function checkAnswer() {
+            let answer = document.getElementById("answer").value.toLowerCase();
+            if (answer === "ambulanza" || answer === "simulatore") {
+                window.location.href = "https://store.steampowered.com/app/1926520/Ambulance_Life_A_Paramedic_Simulator/";
+            } else {
+                alert("Risposta sbagliata! Prova di nuovo.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Prima di accedere al regalo...</h1>
+    <p>Rispondi a questa domanda: Qual è il tema del regalo? (Suggerimento: inizia con 'A')</p>
+    <input type="text" id="answer" placeholder="Scrivi qui la tua risposta">
+    <button onclick="checkAnswer()">Invia</button>
+</body>
+</html>
